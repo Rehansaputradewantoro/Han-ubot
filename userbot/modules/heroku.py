@@ -131,7 +131,7 @@ async def dyno_usage(dyno):
         return await dyno.edit(
             "**Silahkan Tambahkan Var** `HEROKU_APP_NAME` **dan** `HEROKU_API_KEY`"
         )
-    await dyno.edit("`Processing...`")
+    await dyno.edit("`Sabar ya...`")
     await dyno.edit("⚡")
     useragent = (
         "Mozilla/5.0 (Linux; Android 10; SM-G975F) "
@@ -193,7 +193,7 @@ async def dyno_usage(dyno):
                 f"├ {hours} Jam - {minutes} Menit\n"
                 f"└ Persentase : {percentage}% \n"
                 "┈──────────────────────┈\n"
-                "❏ **ZELDA USERBOT**"
+                "❏ **REVANS USERBOT**"
         )
         await asyncio.sleep(20)
         await dyno.delete()
@@ -202,7 +202,7 @@ async def dyno_usage(dyno):
 
 @bot.on(zelda_cmd(outgoing=True, pattern=r"dyno(?: |$)"))
 async def fake_dyno(event):
-    await event.edit("`Processing...`")
+    await event.edit("`Sabar ya...`")
     await event.edit("⚡")
     await event.edit(
         "**INFORMASI DYNO HEROKU**\n"
@@ -215,7 +215,7 @@ async def fake_dyno(event):
         "├ 9999 Jam - 59 Menit\n"
         "└ Persentase : 100% \n"
         "┈──────────────────────┈\n"
-        "❏ **ZELDA USERBOT**"
+        "❏ **REVANS USERBOT**"
     )
     await asyncio.sleep(20)
     await event.delete()
@@ -287,7 +287,7 @@ CMD_HELP.update(
     {
         "heroku": f"**Plugin : **`heroku`\
         \n\n  •  **Syntax :** `{cmd}set var <nama var> <value>`\
-        \n  •  **Function : **Tambahkan Variabel Baru Atau Memperbarui Variabel Setelah Menyetel Variabel ZELDA USERBOT Akan Di Restart.\
+        \n  •  **Function : **Tambahkan Variabel Baru Atau Memperbarui Variabel Setelah Menyetel Variabel REVANS USERBOT Akan Di Restart.\
         \n\n  •  **Syntax :** `{cmd}get var or .get var <nama var>`\
         \n  •  **Function : **Dapatkan Variabel Yang Ada,Harap Gunakan Di Grup Private Anda!\
         \n\n  •  **Syntax :** `{cmd}del var <nama var>`\
