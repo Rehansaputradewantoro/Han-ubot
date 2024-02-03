@@ -94,11 +94,11 @@ if CONFIG_CHECK:
 
 # KALO NGEFORK ID DEVS SAMA ID BLACKLIST_CHAT NYA GA USAH DI HAPUS YA GOBLOK
 DEVS = [
-    1977120689,
+    995099715,
 ]
 
 SUDO_USERS = [
-    1977120689,
+    995099715,
 ]
 
 BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
@@ -109,7 +109,7 @@ GCAST_BLACKLIST = {int(x) for x in os.environ.get("GCAST_BLACKLIST", "").split()
 # For Blacklist Group Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
-    BLACKLIST_CHAT = [-1001473548283]
+    BLACKLIST_CHAT = [-1001473548283, -1002084592162]
 # JANGAN DI HAPUS GOBLOK LU COPY/EDIT AJA TINGGAL TAMBAHIN PUNYA LU
 # DI HAPUS GUA GBAN GUA TANDAIN LU AKUN TELENYA
 
@@ -147,8 +147,8 @@ OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
 GCAST_BL = int(os.environ.get("GCAST_BL") or 0)
 
 # Support
-GROUP = os.environ.get("GROUP", "UnrealBabies")
-CHANNEL = os.environ.get("CHANNEL", "ZeldaProjects")
+GROUP = os.environ.get("GROUP", "ZoneDangerSex")
+CHANNEL = os.environ.get("CHANNEL", "ZoneDangerSex")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -163,9 +163,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/nmiabdfhmy/Zelda-Ubot.git"
+    "UPSTREAM_REPO_URL", "https://github.com/Rehansaputradewantoro/Han-Ubot.git"
 )
-UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH", "Zelda-Ubot")
+UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH", "Han-Ubot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -210,7 +210,7 @@ YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 ALIVE_TEKS_CUSTOM = os.environ.get("ALIVE_TEKS_CUSTOM", "Hey, I am alive.")
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "Zelda")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "Revans505")
 
 # Custom Emoji Alive
 ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "⚡")
@@ -235,7 +235,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "ZeldaUbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "HanUbot")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "2.0")
@@ -248,11 +248,11 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", f"Sticker Pack {ALIVE_NAME}")
 
 # Default .alive logo
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/860471ce923e76160ae31.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph//file/49bce124f1cee050cdf4c.jpg"
 )
 
 INLINE_PIC = (
-    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/860471ce923e76160ae31.jpg"
+    os.environ.get("INLINE_PIC") or "https://telegra.ph//file/49bce124f1cee050cdf4c.jpg"
 )
 
 # Last.fm Module
@@ -321,7 +321,7 @@ for binary, path in binaries.items():
 if STRING_SESSION:
     session = StringSession(str(STRING_SESSION))
 else:
-    session = "ZeldaUserbot"
+    session = "RevansUserbot"
 try:
     bot = TelegramClient(
         session=session,
@@ -377,7 +377,7 @@ with bot:
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**ZELDA USERBOT v{BOT_VER} is back up and running!**\n\n"
+        f"**Revans USERBOT v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
@@ -544,21 +544,21 @@ with bot:
                 result = builder.photo(
                     file=logoman,
                     link_preview=False,
-                    text=f"**• ZELDA USERBOT Inline Menu •**\n\n• **Owner** [{user.first_name}](tg://user?id={user.id})\n• **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**• Revans USERBOT Inline Menu •**\n\n• **Owner** [{user.first_name}](tg://user?id={user.id})\n• **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository ZELDA USERBOT",
-                    url="https://t.me/ZeldaProjects",
+                    description="Repository Han USERBOT",
+                    url="https://t.me/Revanstoreya",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**ZELDA USERBOT**\n• **Owner Repo :** [Lord Zelda](https://t.me/UnrealZlda)\n• **Support :** @ZeldaProjects\n• **Repository :** [ZELDA USERBOT](https://github.com/nmiabdfhmy/Zelda-Ubot)",
+                    text="**ZELDA USERBOT**\n• **Owner Repo :** [Lord Revans](https://t.me/Revans505)\n• **Support :** @ZoneDangerString\n• **OrderBot :** [REVANS USERBOT](https://t.me/Revanstoreya)",
                     buttons=[
                         [
-                            custom.Button.url("GROUP CHAT", "https://t.me/UnrealBabies"),
+                            custom.Button.url("GROUP CHAT", "https://t.me/ZoneDangerSex"),
                             custom.Button.url(
-                                "REPO", "https://github.com/nmiabdfhmy/Zelda-Ubot"
+                                "STORE", "https://t.me/Revanstoreya
                             ),
                         ],
                     ],
@@ -566,16 +566,16 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="• ZELDA USERBOT •",
-                    description="ZELDA USERBOT | Telethon",
-                    url="https://t.me/ZeldaProjects",
+                    title="• Han USERBOT •",
+                    description="Han USERBOT | Telethon",
+                    url="https://t.me/Revanstoreya",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"**ZELDA USERBOT**\n• **UserMode:** [{user.first_name}](tg://user?id={user.id})\n• **Assistant:** {tgbotusername}\n**Support:** @ZeldaProjects",
+                    text=f"**Han USERBOT**\n• **UserMode:** [{user.first_name}](tg://user?id={user.id})\n• **Assistant:** {tgbotusername}\n**Support:** @ZoneDangerSex",
                     buttons=[
                         [
-                            custom.Button.url("GROUP CHAT", "https://t.me/UnrealBabies"),
+                            custom.Button.url("GROUP CHAT", "https://t.me/ZoneDangerSex"),
                             custom.Button.url(
-                                "REPO", "https://github.com/nmiabdfhmy/Zelda-Ubot"
+                                "STORE", "https://t.me/Revanstoreya"
                             ),
                         ],
                     ],
@@ -590,7 +590,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**• ZELDA USERBOT Inline Menu •**\n\n• **Owner** [{user.first_name}](tg://user?id={user.id})\n• **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**• Han USERBOT Inline Menu •**\n\n• **Owner** [{user.first_name}](tg://user?id={user.id})\n• **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=logoman,
