@@ -58,9 +58,9 @@ async def help(event):
             string += f"`\t\t\t{ICON_HELP}\t\t\t"
         await edit_or_reply(
             event,
-            f"**Daftar Perintah Untuk [ZELDA USERBOT](https://github.com/nmiabdfhmy/Zelda-Ubot) :**\n\n"
+            f"**Daftar Perintah Untuk [REVANS USERBOT](https://t.me/Revanstoreya) :**\n\n"
             f"**Jumlah : ** `{len(modules)}` Modules\n"
-            f"**Owner : ** [Lord Zelda](https://t.me/UnrealZlda)\n\n"
+            f"**Owner : ** [Lord Revans](https://t.me/ZoneDangerSex)\n\n"
             f"{HELP_TEXT}"
             f"\n\nJoin and Support @{CHANNEL}",
         )
