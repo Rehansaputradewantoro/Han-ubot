@@ -179,7 +179,7 @@ async def amireallyalive(alive):
     await alive.edit("⚡")
     await asyncio.sleep(2)
     output = (
-        f"**[ZELDA USERBOT](https://github.com/nmiabdfhmy/Zelda-Ubot)** by **[LORD ZELDA](https://t.me/UnrealZlda)**\n\n"
+        f"**[REVANS USERBOT](https://t.me/Revanstoreya)** by **[LORD REVANS](https://t.me/Revans505)**\n\n"
         f"Program is alive! Bot is ready to use\n\n"
         f"    ◉ **Master :** [{user.first_name}](tg://user?id={user.id}) \n"
         f"    ◉ **Modules :** `{len(modules)} Modules` \n"
