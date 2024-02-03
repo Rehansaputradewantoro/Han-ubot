@@ -20,7 +20,7 @@ async def sudo(event):
     if blch == "True":
         await edit_or_reply(
             event,
-            f"🚫 **GCast Blacklist :** `Enabled`\n\n📜 ** Blacklist Group :**\n• `{list}`\n\nKetik `.addblacklist` di grup untuk menambahkan ke Blacklist.",
+            f"🚫 **GCast Blacklist :** `Enabled`\n\n📜 ** Blacklist Group :**\n• `{list}`\n\nKetik `.addblacklist` di grup untuk menambahkan ke Blacklist. Bukan Addbl Tod",
         )
     else:
         await edit_delete(event, "🚫 **GCast Blacklis :** `Disabled`")
@@ -28,7 +28,7 @@ async def sudo(event):
 
 @zelda_cmd(pattern="addblacklist(?:\s|$)([\s\S]*)")
 async def add(event):
-    xxnx = await edit_or_reply(event, "`Processing...`")
+    xxnx = await edit_or_reply(event, "`Sabar Lagi Loading Jangan Di Paksa Tod...`")
     var = "GCAST_BLACKLIST"
     gc = event.chat_id
     if HEROKU_APP_NAME is not None:
@@ -50,14 +50,14 @@ async def add(event):
     gcid = gcastblc.replace("]", "")
     gcast_blc = gcid.replace("set() ", "")
     await xxnx.edit(
-        f"**Berhasil Menambahkan** `{gc}` **ke Daftar GCast Blacklist.**\n\nSedang MeRestart Heroku untuk Menerapkan Perubahan."
+        f"**Berhasil Tod** `{gc}` **ke Daftar GCast Blacklist Beli Bot Ke @Revans505.**\n\nSedang MeRestart Heroku untuk Menerapkan Perubahan."
     )
     heroku_Config[var] = gcast_blc
     
     
 @zelda_cmd(pattern="delblacklist(?:\s|$)([\s\S]*)")
 async def _(event):
-    xxx = await edit_or_reply(event, "`Processing...`")
+    xxx = await edit_or_reply(event, "`Sabar Tod Jangan Di Paksa...`")
     gc = event.chat_id
     if HEROKU_APP_NAME is not None:
         app = Heroku.app(HEROKU_APP_NAME)
@@ -74,7 +74,7 @@ async def _(event):
     if gett in blchat:
         nenwbl = blchat.replace(gett, "")
         await xxx.edit(
-            f"**Berhasil Menghapus** `{gc}` **dari Daftar GCast Blacklist.**\n\nSedang MeRestart Heroku untuk Menerapkan Perubahan."
+            f"**Berhasil Di Hapus** `{gc}` **dari Daftar GCast Blacklist Beli Bot Ke @Revans505.**\n\nSedang MeRestart Heroku untuk Menerapkan Perubahan."
         )
         var = "GCAST_BLACKLIST"
         heroku_Config[var] = nenwbl
@@ -93,7 +93,7 @@ async def gcast(event):
         msg = await event.get_reply_message()
     else:
         return await edit_delete(event, "**Berikan Sebuah Pesan atau Reply**")
-    kk = await edit_or_reply(event, "`Mengirim Pesan Siaran...`")
+    kk = await edit_or_reply(event, "`Tolong Kasih Waktu Jeda Agar Tidak Ke Log Out ...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -111,7 +111,7 @@ async def gcast(event):
             except BaseException:
                 er += 1
     await kk.edit(
-        f"✅ Berhasil Terkirim Ke {done} Grup\n⛔ Gagal Mengirim Ke {er} Grup"
+        f"✅ Mantab Sudah Terkirim Nih Gikes Lo Ke {done} Grup\n⛔ Sorry Tod Gc Main Timer Jadi Gagal Mengirim Ke {er} Grup"
     )
 
 
@@ -124,7 +124,7 @@ async def gucast(event):
         msg = await event.get_reply_message()
     else:
         return await edit_delete(event, "**Berikan Sebuah Pesan atau Reply**")
-    kk = await edit_or_reply(event, "`Mengirim Pesan Siaran...`")
+    kk = await edit_or_reply(event, "`Jangan Di Paksa Lagi Ngirim Tolong Kasih Waktu Jeda Agar Tidak Ke Log Out...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -142,7 +142,7 @@ async def gucast(event):
             except BaseException:
                 er += 1
     await kk.edit(
-        f"✅ Berhasil Terkirim Ke {done} Obrolan\n⛔ Gagal Mengirim Ke {er} Obrolan"
+        f"✅ Berhasil Tod Terkirim Cuma {done} Obrolan\n⛔ Sorry Tod Akun Mereka Pakek Bot Permit Jadi Gagal Mengirim Ke {er} Obrolan"
     )
 
 
