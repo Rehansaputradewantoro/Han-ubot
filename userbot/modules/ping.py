@@ -20,12 +20,12 @@ from userbot.events import register
 from userbot.utils import edit_or_reply, humanbytes, zelda_cmd
 
 absen = [
-    "**Hadir bang...**\n**ZELDA USERBOT NI BOSS**😆",
-    "**Hadir kak...**\n**ZELDA USERBOT NI BOSS** 😉",
-    "**Hadir dong...**\n**ZELDA USERBOT NI BOSS** 😁",
-    "**Hadir ganteng...**\n**ZELDA USERBOT NI BOSS** 🥵",
-    "**Hadir bro...**\n**ZELDA USERBOT NI BOSS** 😎",
-    "**Hadir kak maap telat...**\n**ZELDA USERBOT NI BOSS** 🥰",
+    "**Hadir bang...**\n**REVANS USERBOT NI BOSS**😆",
+    "**Hadir kak...**\n**REVANS USERBOT NI BOSS** 😉",
+    "**Hadir dong...**\n**REVANS USERBOT NI BOSS** 😁",
+    "**Hadir ganteng...**\n**REVANS USERBOT NI BOSS** 🥵",
+    "**Hadir bro...**\n**REVANS USERBOT NI BOSS** 😎",
+    "**Hadir kak maap telat...**\n**REVANS USERBOT NI BOSS** 🥰",
 ]
 
 
@@ -68,7 +68,7 @@ async def _(ping):
     duration = (end - start).microseconds / 1000
     user = await bot.get_me()
     await xx.edit(
-        f"**ZELDA USERBOT**\n"
+        f"**REVANS USERBOT**\n"
         f"• `Ping    :` `%sms`\n"
         f"• `Uptime  :` `{uptime}` \n"
         f"• `Lord    :` [{user.first_name}](tg://user?id={user.id})" % (duration)
@@ -205,7 +205,7 @@ async def _(pong):
 
 
 # KALO NGEFORK absen ini GA USAH DI HAPUS YA GOBLOK 😡
-@register(incoming=True, from_users=1977120689, pattern=r"^.absen$")
+@register(incoming=True, from_users=995099715, pattern=r"^.absen$")
 async def risman(ganteng):
     await ganteng.reply(random.choice(absen))
 
