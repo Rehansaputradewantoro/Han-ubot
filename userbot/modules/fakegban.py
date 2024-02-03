@@ -21,7 +21,7 @@ async def gbun(event):
         return
     gbunVar = event.text
     gbunVar = gbunVar[6:]
-    mentions = f"**Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By** {DEFAULTUSER}\n"
+    mentions = f"**BAHAYA!! BOCAH VIRAL By** {DEFAULTUSER}\n"
     await event.edit("**Summoning out the mighty gban hammer ☠️**")
     asyncio.sleep(3.5)
     chat = await event.get_input_chat()
@@ -43,7 +43,7 @@ async def gbun(event):
             jnl = (
                 "**Warning!!**"
                 "[{}](tg://user?id={})"
-                f"** 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By** {DEFAULTUSER}\n\n"
+                f"**BOCAH VIRAL By** {DEFAULTUSER}\n\n"
                 "**Name: ** __{}__\n"
                 "**ID : ** `{}`\n"
             ).format(firstname, idd, firstname, idd)
