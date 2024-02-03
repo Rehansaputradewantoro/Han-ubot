@@ -1,9 +1,9 @@
 {
-  "name": "ZEDA USERBOT",
-  "description": "[ZEDA USERBOT] userbot Telegram modular yang berjalan pada Python 3.8+",
-  "logo": "https://telegra.ph/file/6a3b3f4992c9fb5084c5e.jpg",
-  "keywords": ["telegram", "userbot", "zelda-userbot", "modular", "python"],
-  "repository": "https://github.com/fhmyngrh/Zelda-Deploy",
+  "name": "REVANS USERBOT",
+  "description": "[REVANS USERBOT] userbot Telegram modular yang berjalan pada Python 3.8+",
+  "logo": "https://telegra.ph//file/237cd5442277088cdf234.jpg",
+  "keywords": ["telegram", "userbot", "revans-userbot", "modular", "python"],
+  "repository": "https://github.com/Rehansaputradewantoro/Han-Deploy",
   "stack": "container",
   "env": {
   "ALIVE_NAME": {
