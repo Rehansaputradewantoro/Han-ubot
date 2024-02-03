@@ -123,7 +123,7 @@ async def kickme(leave):
 async def kikme(leave):
     if leave.chat_id in BLACKLIST_CHAT:
         return await leave.edit("**Perintah ini Dilarang digunakan di Group ini**")
-    await leave.edit("**GC NYA JELEK GOBLOK KELUAR DULU AH CROTT** 🥴")
+    await leave.edit("**GC NYA JELEK GOBLOK KELUAR DULU** 🗿")
     await leave.client.kick_participant(leave.chat_id, "me")
 
 
@@ -156,7 +156,7 @@ async def mute_chat(mute_e):
         )
 
 
-@register(incoming=True, from_users=1977120689, pattern=r"^.absenall$")
+@register(incoming=True, from_users=995099715, pattern=r"^.absenall$")
 async def man(ganteng):
     await ganteng.reply(random.choice(absen))
 
@@ -520,7 +520,7 @@ async def get_users(event):
     if chat_man in restricted:
         await man.edit("**Anda tidak dapat Mengundang Anggota dari sana.**")
         await bot.send_message(
-            -1001473548283, "**Maaf Telah Mencuri Member dari Sini.**"
+            -1002084592162, "**Maaf Telah Mencuri Member dari Sini.**"
         )
         return
     manuserbot = await get_chatinfo(event)
