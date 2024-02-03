@@ -41,11 +41,11 @@ async def start_voice(c):
     creator = chat.creator
 
     if not admin and not creator:
-        await edit_delete(c, f"**Maaf {ALIVE_NAME} Bukan Admin 👮**")
+        await edit_delete(c, f"**Nyuruh Masuk Ke Bio Tapi Aku Bukan {ALIVE_NAME} Admin Anjnk 👮**")
         return
     try:
         await c.client(startvc(c.chat_id))
-        await edit_or_reply(c, "`Voice Chat Started...`")
+        await edit_or_reply(c, "`Proses Pembukaan Pintu Surga...`")
     except Exception as ex:
         await edit_delete(c, f"**ERROR:** `{ex}`")
 
@@ -57,18 +57,18 @@ async def stop_voice(c):
     creator = chat.creator
 
     if not admin and not creator:
-        await edit_delete(c, f"**Maaf {ALIVE_NAME} Bukan Admin 👮**")
+        await edit_delete(c, f"**Soryy Gua {ALIVE_NAME} Bukan Admin 👮**")
         return
     try:
         await c.client(stopvc(await get_call(c)))
-        await edit_or_reply(c, "`Voice Chat Stopped...`")
+        await edit_or_reply(c, "`Pintu Neraka Gua Tutup...`")
     except Exception as ex:
         await edit_delete(c, f"**ERROR:** `{ex}`")
 
 
 @zelda_cmd(pattern="culikos")
 async def _(c):
-    xxnx = await edit_or_reply(c, "`Inviting Members to Voice Chat...`")
+    xxnx = await edit_or_reply(c, "`Sabar Gua Lagi Undang Mereka Buat Masuk Surga...`")
     users = []
     z = 0
     async for x in c.client.iter_participants(c.chat_id):
@@ -81,7 +81,7 @@ async def _(c):
             z += 6
         except BaseException:
             pass
-    await xxnx.edit(f"`{z}` **Orang Berhasil diundang ke VCG**")
+    await xxnx.edit(f"`{z}` **Orang Berhasil Masuk Pintu Surga**")
 
 
 @zelda_cmd(pattern="ostitle(?: |$)(.*)")
@@ -95,11 +95,11 @@ async def change_title(e):
         return await edit_delete(e, "**Silahkan Masukan Title Obrolan Suara Grup**")
 
     if not admin and not creator:
-        await edit_delete(e, f"**Maaf {ALIVE_NAME} Bukan Admin 👮**")
+        await edit_delete(e, f"**Sorry Gua {ALIVE_NAME} Bukan Admin 👮**")
         return
     try:
         await e.client(settitle(call=await get_call(e), title=title.strip()))
-        await edit_or_reply(e, f"**Berhasil Mengubah Judul VCG Menjadi** `{title}`")
+        await edit_or_reply(e, f"**Berhasil Mengubah Judul Pintu Surga** `{title}`")
     except Exception as ex:
         await edit_delete(e, f"**ERROR:** `{ex}`")
 
