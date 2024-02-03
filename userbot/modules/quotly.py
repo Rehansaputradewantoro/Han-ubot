@@ -16,7 +16,7 @@ async def quotly(event):
     match = event.pattern_match.group(1).strip()
     if not event.is_reply:
         return await edit_delete(event, "**Mohon Balas ke Pesan**")
-    msg = await edit_or_reply(event, "`Processing...`")
+    msg = await edit_or_reply(event, "`Sabar ya Revans Userbot Loading...`")
     reply = await event.get_reply_message()
     replied_to, reply_ = None, None
     if match:
@@ -66,7 +66,7 @@ async def quotly(event):
         file = await create_quotly(reply_, bg=match, reply=replied_to, sender=user)
     except Exception as er:
         return await msg.edit(f"**ERROR:** `{er}`")
-    message = await reply.reply("Quoted by **Zelda Userbot**", file=file)
+    message = await reply.reply("Quoted by **Revans Userbot**", file=file)
     remove(file)
     await msg.delete()
     return message
