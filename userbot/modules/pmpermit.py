@@ -26,8 +26,8 @@ DEF_UNAPPROVED_MSG = (
     "• Tunggu hingga pesan kamu di setujui\n"
     "• Dilarang Spam Chat\n"
     "• 5x Spam Chat, Bot akan otomatis memblokir\n"
-    "• Subs Channel @ZeldaProjects\n\n"
-    "🚀  ZELDA USERBOT"
+    "• Subs Channel @Revanstoreya\n\n"
+    "🚀  Revans USERBOT"
 )
 # =================================================================
 
